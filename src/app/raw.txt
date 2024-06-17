@@ -1,0 +1,37 @@
+There is an improvement to concurrency in React and new features added, which include:
+
+Automatic Batching
+Transitions
+Suspense on the server
+New Strict Mode Behaviors
+New Hooks -
+useId()
+useTransition()
+useDeferredValue()
+useSyncExternalStore()
+useInsertionEffect()
+
+As earlier stated, on March 29, 2022, React 18 was rolled out with some key updates and new features.
+
+
+New/Extended Features in React 19
+1. React Compiler -
+he React Compiler is a significant feature in React 19. It takes your React code and converts it into regular JavaScript. This process can potentially double the performance of your application.
+
+2. Server Components
+Server Components in React 19 allow components to be processed on the server before delivering the page to users. 
+
+3. Actions
+Actions in React 19 simplify the management of data and interactions within web pages
+
+4. Document Metadata
+Document Metadata in React 19 allowing us to accomplish more with less code. It provides a way to manage the metadata of a document, such as the title, meta tags, and other head elements.
+
+5. Asset Loading
+Asset Loading in React 19 enables assets to load in the background. This improves both the application's load time and the user experience. 
+
+6. Web Components
+Web Components in React 19 introduce improved compatibility with the Web Components standard. 
+
+7. Enhanced/New Hooks
+Introduces four new hooks: useOptimistic, useFormStatus, useFormState, and use
