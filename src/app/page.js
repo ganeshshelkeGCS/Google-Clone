@@ -3,6 +3,7 @@ import Image from 'next/image';
 import GoogleLogo from '@/app/images/google.png';
 import HomeSearch from './components/HomeSearch';
 
+
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
           style={{width:"auto"}}
         />
         <HomeSearch />
+        
       </div>
     </>
   );
