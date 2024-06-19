@@ -20,7 +20,7 @@ const [randomSearchLoading, setRandomSearchLoading] = useState(false);
 
   const randomSearch = async(e) => {
     setRandomSearchLoading(true);
-    const response = await fetch("https://random-word-api.herokuapp.com/word")
+    const response = await fetch("https://random-word-api.herokuapp.com/all")
       .then((res) => res.json())
       .then((data) => data[0]);
 
