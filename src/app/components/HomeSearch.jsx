@@ -25,7 +25,7 @@ const [randomSearchLoading, setRandomSearchLoading] = useState(false);
       .then((data) => data[0]);
 
       if(!response) return;
-      router.push(`/search/web?searchTern=${response}`);
+      router.push(`/search/web?searchTerm=${response}`);
       setRandomSearchLoading(false);
   };
   return (
