@@ -54,7 +54,7 @@ export default function HomeSearch() {
           onClick={randomSearch}
           className="bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow disabled:opacity-80 disabled:shadow-sm"
         >
-          {randomSearchLoading ? "Loading..." : "I am feeling licky"}
+          {randomSearchLoading ? "Loading..." : "I am feeling lucky"}
         </button>
       </div>
     </>

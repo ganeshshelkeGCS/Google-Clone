@@ -2,13 +2,14 @@ import ImageSearchResults from "@/app/components/ImageSearchResult";
 import Link from "next/link";
 
 export default async function ImageSearchPage({ searchParams }) {
+  const startIndex = searchParams.start || '1';
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}'}&searchType=image&start=${startIndex}`);
 
-  const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`);
-  if (!response.ok) throw new Error("Something went wrong");
+  if (!response.ok) throw new Error('Something went wrong');
   const data = await response.json();
   const results = data.items;
-//  console.log(data);
-
+  
   if (!results) {
     return (
       <div className="flex flex-col justify-center items-center pt-10">
