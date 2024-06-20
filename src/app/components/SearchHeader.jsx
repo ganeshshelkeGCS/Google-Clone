@@ -1,14 +1,13 @@
-'use client';
+"use client";
 
 import Link from "next/link";
-import  {TbGridDots}  from 'react-icons/tb';
-import  {RiSettings3Line}  from 'react-icons/ri';
-import Image from 'next/image';
+import { TbGridDots } from "react-icons/tb";
+import { RiSettings3Line } from "react-icons/ri";
+import Image from "next/image";
 
-import GoogleLOGO from '@/app/images/google.png';
-import SearchBox from '@/app/components/SearchBox';
-import SearchHeaderOptions from '@/app/components/SearchHeaderOptions';
-
+import GoogleLOGO from "@/app/images/google.png";
+import SearchBox from "@/app/components/SearchBox";
+import SearchHeaderOptions from "@/app/components/SearchHeaderOptions";
 
 export default function SearchHeader() {
   return (
@@ -17,7 +16,7 @@ export default function SearchHeader() {
         <Link href="/">
           <Image
             src={GoogleLOGO}
-           alt="Google Logo"
+            alt="Google Logo"
             width={120}
             height={40}
             priority
@@ -25,13 +24,15 @@ export default function SearchHeader() {
           />
         </Link>
         <div className="flex-1">
-        <SearchBox />
+          <SearchBox />
         </div>
-        <div className='hidden md:inline-flex space-x-2'>
-          <RiSettings3Line className='bg-transparent hover:bg-gray-200 p-2 text-4xl rounded-full cursor-pointer'/>
-          <TbGridDots className='bg-transparent hover:bg-gray-200 p-2 text-4xl rounded-full cursor-pointer'/>
+        <div className="hidden md:inline-flex space-x-2">
+          <RiSettings3Line className="bg-transparent hover:bg-gray-200 p-2 text-4xl rounded-full cursor-pointer" />
+          <TbGridDots className="bg-transparent hover:bg-gray-200 p-2 text-4xl rounded-full cursor-pointer" />
         </div>
-        <button className="bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-shadow ml-2">Sign in</button>
+        <button className="bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-shadow ml-2">
+          Sign in
+        </button>
       </div>
       <SearchHeaderOptions />
     </header>
